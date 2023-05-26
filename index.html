@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JS Statements</title>
+    </head>
+    <body>
+        <script>
+            /*
+            Author: Jordann Osborn
+            Date: 15/08/2022
+            Purpose: demo JS output, variables 
+                     and statements 
+            */
+           let age = 20 
+           let increment =5
+           let newAge = age * increment 
+            let message = "Details:"
+            message += "<br>Age: "+age
+            message += "<br>New age:"+newAge
+        </script>
+        <script>
+            console.log("Hello World (line 9)")
+        </script>
+
+        <h1>JS Statements till ..</h1>
+        <h2 id="details"></h2>
+        <script>
+            document.getElementById("details").innerHTML=message
+            var num1 = prompt("Enter a number")
+            message += "<br>num:"+num1
+            message += "<br>New age:" + (age * num1)
+            
+            document.getElementById("details").innerHTML=message
+        </script>
+        <script>
+            console.log("Hello World (line 18)")
+        </script>
+        <h2> this is after the alert </h2>
+        <button onclick="window.print()">Print me</button>
+    </body>
+</html>

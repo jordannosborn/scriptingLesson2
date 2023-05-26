@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Using math operations</title>
+        <script>
+            // Number function converts strings to integer 
+            // all values entered using prompt are string or text type data 
+
+            let num1 = Number(prompt("Enter a number:"))
+            let num2 = Number(prompt("Enter a number:"))
+            diff = num1 - num2 
+            prod = num1 * num2
+            quot = num1 / num2
+            remain = num1 % num2
+            message = "Arithmetic operatiors used"
+            message += "<br>Sum :" + sum
+            message += "<br>Difference :" + diff
+            message += "<br>Product :" + prod
+            message += "<br>Quotient :" + quot
+            message += "<br>Remainder :" + remain
+
+        </script> 
+    </head>
+    <body>
+        <h1>Using arithmetic operators</h1> 
+        <p>This program displays the sum, difference, product, quotient, and remainder of numbers entered by the user.</p>
+        <p id="details">
+            <script>
+                document.getElementById("details").innerHTML = message 
+            </script>
+        </p>
+    </body>
+</html>
